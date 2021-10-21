@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="letsworks.Views.Login">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout>
+
+
+                <Image Source="FacturesDevisFactures.png"></Image>
+
+
+                <Label Text="E-mail" Padding="20,0,0,0"></Label>
+                <Entry Placeholder="E-mail" Margin="20,0,20,0"></Entry>
+                <Label Text="Password" Padding="20,0,0,0"></Label>
+                <Line HeightRequest="1"></Line>
+                <Entry IsPassword="True" Placeholder="Password" Margin="20,0,20,0"></Entry>
+                <Button Text="Connecter" CornerRadius="10" BackgroundColor="Green" TextColor="White" WidthRequest="200" Margin="20,0,20,0"/>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

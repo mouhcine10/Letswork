@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="letsworks.Views.Inscription">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                    <RowDefinition  />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                   
+                </Grid.ColumnDefinitions>
+             <!--   <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>-->
+
+
+                <Entry Keyboard="Text" Placeholder="Nom:" Grid.Row="0"></Entry>
+                <Entry Keyboard="Text" Placeholder="Prénom:" Grid.Row="1"></Entry>
+                <Entry Keyboard="Email" Placeholder="E-mail:" Grid.Row="2"></Entry>
+
+
+                <Entry Keyboard="Telephone" Placeholder="Tel:" Grid.Row="3" Grid.Column="2"></Entry>
+                <Picker Grid.Row="3" Grid.Column="1"></Picker>
+                    <Button Text="Suivant" BackgroundColor="Green" WidthRequest="2" HeightRequest="50" Margin="10,10,10,10" CornerRadius="10" Grid.Row="5"></Button>
+                
+               
+            </Grid>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
