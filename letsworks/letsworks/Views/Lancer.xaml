@@ -5,9 +5,9 @@
     
     <ContentPage.Content>
   
-        <StackLayout>
+        <StackLayout BackgroundColor="White">
 
-            <Image Source="FactureDevisFactures.png"/>
+            <Image Source="Images/LetsWork.jpg" WidthRequest="40" HeightRequest="650"></Image>
             <Button Text="Connextion" Margin="20,5,20,0" Clicked="llogin" BackgroundColor="Green" TextColor="White"  HeightRequest="40" CornerRadius="10" />
             <Button Text="Inscription" Margin="20,5,20,0" Clicked="Inscription" BackgroundColor="Green" TextColor="White" HeightRequest="40" CornerRadius="10"/>
 

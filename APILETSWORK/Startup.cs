@@ -18,7 +18,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace APILETSWORK
+namespace APILETSWORK.ChatHub
 {
     public class Startup
     {
@@ -46,7 +46,7 @@ namespace APILETSWORK
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "APILETSWORK", Version = "v1" });
             });
 
-
+            services.AddSignalR();
             services.AddAuthentication(o =>
             {
                 o.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -66,7 +66,7 @@ namespace APILETSWORK
                    ValidateAudience = true,
                    ValidAudience = Configuration["JWT:ValidAudience"],
                    ValidIssuer = Configuration["JWT:ValidIssuer"],
-                   IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Secret"]))
+                   IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:SecretKey"]))
                };
            });
 
@@ -93,7 +93,15 @@ namespace APILETSWORK
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>("/chat");
             });
+
+          
+              
+                         
+
+            
+
         }
     }
 }

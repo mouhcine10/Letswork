@@ -11,5 +11,8 @@ namespace APILETSWORK.Models
         [Key]
         public string IDmission { get; set; }
 
+
+        public Pro Pro { get; set; }
+
     }
 }

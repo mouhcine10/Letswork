@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" xmlns:local="clr-namespace:letsworks.Views"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+    BarBackgroundColor="#35c4ba"
+    BarTextColor="White"
+    android:TabbedPage.BarItemColor="#66FFFFFF"
+    android:TabbedPage.BarSelectedItemColor="White"
+   x:Class="letsworks.Views.TabbedPageHome">
+    <NavigationPage Title="Map" IconImageSource="iconsmap.png" >
+        <x:Arguments>
+            <local:MapView />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage  Title="Moi" IconImageSource="iconsUser.png">
+        <x:Arguments>
+            <local:Profil />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage  Title="Activité" IconImageSource="iconsactivite.png">
+        <x:Arguments>
+            <local:Activite />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage  Title="Message" IconImageSource="iconsMessage.png">
+        <x:Arguments>
+            <local:Chat />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage  Title="Offre" IconImageSource="iconsOffre.png">
+        <x:Arguments>
+            <local:ListeOffres />
+        </x:Arguments>
+    </NavigationPage>
+
+
+
+
+
+</TabbedPage>

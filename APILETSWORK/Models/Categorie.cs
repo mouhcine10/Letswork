@@ -15,5 +15,6 @@ namespace APILETSWORK.Models
 
         public string Logo { get; set; }
 
+        public Mission Mission { get; set; }
     }
 }
