@@ -14,9 +14,10 @@ namespace letsworks.Views
     {
         public Lancer()
         {
+          
             InitializeComponent();
 
-         
+            
         }
         void llogin(object sender, EventArgs arg)
         {

@@ -21,15 +21,15 @@ namespace APILETSWORK.Controllers
     {
 
         private readonly SignInManager<ApplicationUsers> _signInManager;
-        private  UserManager<ApplicationUsers> _userManager;
+        private readonly UserManager<ApplicationUsers> userManager;
         private readonly IConfiguration configuration;
 
 
-        public AdminController(SignInManager<ApplicationUsers> SM, UserManager<ApplicationUsers> UM)
+        public AdminController(SignInManager<ApplicationUsers> SM, UserManager<ApplicationUsers> UM ,IConfiguration IC)
         {
             this._signInManager = SM;
-            this._userManager = UM;
-
+            this.userManager = UM;
+            this.configuration = IC;
 
         }
 
@@ -38,7 +38,7 @@ namespace APILETSWORK.Controllers
 
         [HttpPost]
         [Route("Register")]
-        public async Task<IActionResult> register(Register register)
+        public async Task<IActionResult> register([FromBody] Register register)
         {
 
             ApplicationUsers applicationUser = new ApplicationUsers()
@@ -57,7 +57,7 @@ namespace APILETSWORK.Controllers
             };
 
 
-            var res = await _userManager.CreateAsync(applicationUser, register.Password);
+            var res = await userManager.CreateAsync(applicationUser, register.Password);
 
 
 
@@ -68,50 +68,40 @@ namespace APILETSWORK.Controllers
 
         // login
 
-        [AllowAnonymous]
         [HttpPost]
-        [Route("Login")]
-        public async Task<IActionResult> Login(Auth Auth)
+        [Route("login")]
+        public async Task<IActionResult> Login([FromBody] Auth model)
         {
-            string to = "";
-            ApplicationUsers Usercheck= await _userManager.FindByEmailAsync(Auth.Email);
-
-            var res = await _userManager.CheckPasswordAsync(Usercheck, Auth.Motdepasse);
-
-            var userrole = await _userManager.GetRolesAsync(Usercheck);
-            //to= generateJwtToken(Usercheck);
-            var authClaim = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Name,Usercheck.UserName),
-                    new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()),
-
-                };
-            foreach (var d in userrole)
+            var user = await userManager.FindByNameAsync(model.Email);
+            if (user != null && await userManager.CheckPasswordAsync(user, model.Motdepasse))
             {
-
-                authClaim.Add(new Claim(ClaimTypes.Role, d));
-
-
-            }
-
-            var authSigninKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Secret"]));
-
-            var token = new JwtSecurityToken(
-
+                var userRoles = await userManager.GetRolesAsync(user);
+                var authClaims = new List<Claim>
+{
+new Claim(ClaimTypes.Name, user.UserName),
+new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+};
+                foreach (var userRole in userRoles)
+                {
+                    authClaims.Add(new Claim(ClaimTypes.Role, userRole));
+                }
+                var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:SecretKey"]));
+                var token = new JwtSecurityToken(
                 issuer: configuration["JWT:ValidIssuer"],
                 audience: configuration["JWT:ValidAudience"],
                 expires: DateTime.Now.AddHours(3),
-                claims: authClaim,
-                signingCredentials: new SigningCredentials(authSigninKey, SecurityAlgorithms.HmacSha256)
-
+                claims: authClaims,
+                signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
                 );
-            to = new JwtSecurityTokenHandler().WriteToken(token);
-
-
-
-
-            return Ok(new { token = to, User = Usercheck.Email });
+                return Ok(new
+                {
+                    token = new JwtSecurityTokenHandler().WriteToken(token),
+                    expiration = token.ValidTo
+                });
+            }
+            return Unauthorized();
         }
+
 
 
 

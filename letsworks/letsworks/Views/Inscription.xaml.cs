@@ -1,4 +1,5 @@
-﻿using System;
+﻿using letsworks.Authentification;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,12 @@ namespace letsworks.Views
         {
             InitializeComponent();
         }
+
+        public void Register()
+        {
+
+        }
+
+
     }
 }

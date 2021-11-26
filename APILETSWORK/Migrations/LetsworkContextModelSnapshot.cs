@@ -116,10 +116,15 @@ namespace APILETSWORK.Migrations
                     b.Property<string>("Logo")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MissionIDmission")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("NomCategorie")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdCategorie");
+
+                    b.HasIndex("MissionIDmission");
 
                     b.ToTable("categories");
                 });
@@ -204,7 +209,12 @@ namespace APILETSWORK.Migrations
                     b.Property<string>("IDmission")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("ProIdPro")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("IDmission");
+
+                    b.HasIndex("ProIdPro");
 
                     b.ToTable("missions");
                 });
@@ -370,6 +380,15 @@ namespace APILETSWORK.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("APILETSWORK.Models.Categorie", b =>
+                {
+                    b.HasOne("APILETSWORK.Models.Mission", "Mission")
+                        .WithMany()
+                        .HasForeignKey("MissionIDmission");
+
+                    b.Navigation("Mission");
+                });
+
             modelBuilder.Entity("APILETSWORK.Models.Commentaire", b =>
                 {
                     b.HasOne("APILETSWORK.Models.ApplicationUsers", "ApplicationUsers")
@@ -389,6 +408,15 @@ namespace APILETSWORK.Migrations
                 });
 
             modelBuilder.Entity("APILETSWORK.Models.Metier", b =>
+                {
+                    b.HasOne("APILETSWORK.Models.Pro", "Pro")
+                        .WithMany()
+                        .HasForeignKey("ProIdPro");
+
+                    b.Navigation("Pro");
+                });
+
+            modelBuilder.Entity("APILETSWORK.Models.Mission", b =>
                 {
                     b.HasOne("APILETSWORK.Models.Pro", "Pro")
                         .WithMany()

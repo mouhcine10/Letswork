@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "NvKGAr3Or9fay4BvQkOnFD+a7N7TLYYm3ZuOQawZ0HlcneaKDJaloOFR1z9hJieZzENqGDEaKZmgWyKw+WeyuA==",
-  "success": true,
+  "dgSpecHash": "Cabq6mQU0POb1XJ8+01NufxROtDBkwq5dQcXpxLQ5uEuUJVS284FB2jse5MrpcslL0+SLbhIhQNRkMquv9MVKA==",
+  "success": false,
   "projectFilePath": "C:\\Users\\mouhc\\source\\repos\\LetsWorks\\LestworkApi\\LestworkApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mouhc\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
@@ -136,5 +136,15 @@
     "C:\\Users\\mouhc\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
     "C:\\Users\\mouhc\\.nuget\\packages\\xamarin.forms.maps\\5.0.0.2012\\xamarin.forms.maps.5.0.0.2012.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Le projet letsworks.Android n'est pas compatible avec net5.0 (.NETCoreApp,Version=v5.0). Le projet letsworks.Android prend en charge : monoandroid10.0 (MonoAndroid,Version=v10.0)",
+      "libraryId": "letsworks.Android",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="letsworks.Views.CheckPhone">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Numero du Télephone :" TextColor="Black"
+                   
+                VerticalOptions="End"
+                   Margin="10,10,10,10"
+                HorizontalOptions="Start" />
+
+            <Entry  Placeholder="Numero de tél :" Keyboard="Telephone"  Margin="10,10,10,10"></Entry>
+
+            <Button  Text="Valider"  Clicked="Valider" BackgroundColor="#35c4ba" TextColor="White" CornerRadius="15"  WidthRequest="2" HeightRequest="50" Margin="10,10,10,10"> </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

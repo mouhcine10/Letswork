@@ -11,7 +11,7 @@ namespace letsworks
         {
             InitializeComponent();
 
-            MainPage = new Lancer();
+            MainPage = new  Inscription();
          //   GoogleMapsApiService.Initialize(key.GoogleMapsApiKey);
         }
 

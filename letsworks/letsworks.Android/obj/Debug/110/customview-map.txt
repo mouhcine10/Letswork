@@ -28,6 +28,7 @@ foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\110\lp\46\jl\res\layout\bottomtablayout.xml
 item;C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\110\lp\46\jl\res\values\styles.xml
+item;obj\Debug\110\res\values\styles.xml
 LinearLayout;C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\110\lp\46\jl\res\layout\bottomtablayout.xml
 LinearLayout;obj\Debug\110\res\layout\lancer.xml
 LinearLayout;obj\Debug\110\res\layout\mapsliste.xml

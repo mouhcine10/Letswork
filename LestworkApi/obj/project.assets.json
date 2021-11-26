@@ -1801,6 +1801,16 @@
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {}
         }
+      },
+      "letsworks.Android/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/letsworks.Android.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/letsworks.Android.dll": {}
+        }
       }
     }
   },
@@ -5312,6 +5322,11 @@
         "xamarin.forms.maps.5.0.0.2012.nupkg.sha512",
         "xamarin.forms.maps.nuspec"
       ]
+    },
+    "letsworks.Android/1.0.0": {
+      "type": "project",
+      "path": "../letsworks/letsworks.Android/letsworks.Android.csproj",
+      "msbuildProject": "../letsworks/letsworks.Android/letsworks.Android.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5334,7 +5349,8 @@
       "Microsoft.Identity.Web >= 1.14.0",
       "Newtonsoft.Json >= 13.0.1",
       "Swashbuckle.AspNetCore >= 6.1.4",
-      "Xamarin.Forms.Maps >= 5.0.0.2012"
+      "Xamarin.Forms.Maps >= 5.0.0.2012",
+      "letsworks.Android >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5345,11 +5361,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mouhc\\source\\repos\\letsworks\\LestworkApi\\LestworkApi.csproj",
+      "projectUniqueName": "C:\\Users\\mouhc\\source\\repos\\LetsWorks\\LestworkApi\\LestworkApi.csproj",
       "projectName": "LestworkApi",
-      "projectPath": "C:\\Users\\mouhc\\source\\repos\\letsworks\\LestworkApi\\LestworkApi.csproj",
+      "projectPath": "C:\\Users\\mouhc\\source\\repos\\LetsWorks\\LestworkApi\\LestworkApi.csproj",
       "packagesPath": "C:\\Users\\mouhc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mouhc\\source\\repos\\letsworks\\LestworkApi\\obj\\",
+      "outputPath": "C:\\Users\\mouhc\\source\\repos\\LetsWorks\\LestworkApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5371,7 +5387,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mouhc\\source\\repos\\LetsWorks\\letsworks\\letsworks.Android\\letsworks.Android.csproj": {
+              "projectPath": "C:\\Users\\mouhc\\source\\repos\\LetsWorks\\letsworks\\letsworks.Android\\letsworks.Android.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5481,8 +5501,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.207\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.209\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Le projet letsworks.Android n'est pas compatible avec net5.0 (.NETCoreApp,Version=v5.0). Le projet letsworks.Android prend en charge : monoandroid10.0 (MonoAndroid,Version=v10.0)",
+      "libraryId": "letsworks.Android",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

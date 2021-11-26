@@ -46,4 +46,8 @@
     <Folder Include="Images\iconsCategorie\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\letsworks\letsworks.Android\letsworks.Android.csproj" />
+  </ItemGroup>
+
 </Project>

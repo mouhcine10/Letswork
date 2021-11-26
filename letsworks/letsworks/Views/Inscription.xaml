@@ -5,9 +5,10 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Grid>
+            <Grid Margin="10,10,10,10">
 
-                <Grid.RowDefinitions>
+                <Grid.RowDefinitions >
+                    
                     <RowDefinition  />
                     <RowDefinition  />
                     <RowDefinition  />
@@ -18,8 +19,8 @@
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
 
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition />
+
                    
                 </Grid.ColumnDefinitions>
              <!--   <Grid.ColumnDefinitions>
@@ -28,14 +29,12 @@
                 </Grid.ColumnDefinitions>-->
 
 
-                <Entry Keyboard="Text" Placeholder="Nom:" Grid.Row="0"></Entry>
-                <Entry Keyboard="Text" Placeholder="Prénom:" Grid.Row="1"></Entry>
-                <Entry Keyboard="Email" Placeholder="E-mail:" Grid.Row="2"></Entry>
-
-
-                <Entry Keyboard="Telephone" Placeholder="Tel:" Grid.Row="3" Grid.Column="2"></Entry>
-                <Picker Grid.Row="3" Grid.Column="1"></Picker>
-                    <Button Text="Suivant" BackgroundColor="Green" WidthRequest="2" HeightRequest="50" Margin="10,10,10,10" CornerRadius="10" Grid.Row="5"></Button>
+                <Entry Keyboard="Text" Placeholder="Username" Grid.Row="0"></Entry>
+                <Entry Keyboard="Email" Placeholder="E-mail:" Grid.Row="1"></Entry>
+                <Entry Keyboard="Telephone" Placeholder="Tel:" Grid.Row="2"></Entry>
+                <Entry IsPassword="True" Placeholder="Mot de passe :" Grid.Row="3"></Entry>
+                <Entry IsPassword="True" Keyboard="Text" Placeholder="Conf Mot de passe :" Grid.Row="4"></Entry>
+                <Button Clicked="Register" Text="Suivant" BackgroundColor="#35c4ba" TextColor="White" WidthRequest="2" HeightRequest="50" Margin="10,10,10,10" CornerRadius="10" Grid.Row="8"></Button>
                 
                
             </Grid>
