@@ -21,6 +21,9 @@ C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks\obj\Debug\netstandard2
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks\obj\Debug\netstandard2.0\Views\Chat.xaml.g.cs
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks\obj\Debug\netstandard2.0\Views\Pagechat.xaml.g.cs
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks\obj\Debug\netstandard2.0\Views\Profil.xaml.g.cs
+<<<<<<< HEAD
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks\obj\Debug\netstandard2.0\Views\CheckPhone.xaml.g.cs
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks\obj\Debug\netstandard2.0\Views\ListeOffres.xaml.g.cs
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks\obj\Debug\netstandard2.0\Views\Codeckeck.xaml.g.cs
+=======
+>>>>>>> 15722b80aa01d14e28b9ba63e1378ecc6a5cf2f1

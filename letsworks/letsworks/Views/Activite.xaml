@@ -4,7 +4,10 @@
              x:Class="letsworks.Views.Activite">
     <ContentPage.Content>
         <StackLayout>
+<<<<<<< HEAD
            
+=======
+>>>>>>> 15722b80aa01d14e28b9ba63e1378ecc6a5cf2f1
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
