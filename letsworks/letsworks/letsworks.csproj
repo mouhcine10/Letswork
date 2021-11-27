@@ -11,6 +11,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Drawable\**" />
+    <Compile Remove="Styles\**" />
+    <EmbeddedResource Remove="Drawable\**" />
+    <EmbeddedResource Remove="Styles\**" />
+    <None Remove="Drawable\**" />
+    <None Remove="Styles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="5.0.7" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
@@ -27,15 +36,14 @@
     <EmbeddedResource Update="Views\Chat.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-<<<<<<< HEAD
+
     <EmbeddedResource Update="Views\CheckPhone.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Codeckeck.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-=======
->>>>>>> 15722b80aa01d14e28b9ba63e1378ecc6a5cf2f1
+
     <EmbeddedResource Update="Views\Inscription.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -60,10 +68,5 @@
     <EmbeddedResource Update="Views\TabbedPageHome.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Drawable\" />
-    <Folder Include="Styles\" />
   </ItemGroup>
 </Project>

@@ -94,8 +94,8 @@ C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.iOS\obj\iPhone\Debug\i
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.iOS\obj\iPhone\Debug\optimized\
-C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.iOS\obj\iPhone\Debug\letsworks.iOS.csprojAssemblyReference.cache
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.iOS\obj\iPhone\Debug\letsworks.iOS.csproj.CoreCompileInputs.cache
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.iOS\obj\iPhone\Debug\letsworks.iOS.csproj.CopyComplete
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.iOS\obj\iPhone\Debug\letsworks.iOS.exe
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.iOS\obj\iPhone\Debug\letsworks.iOS.pdb
+C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.iOS\obj\iPhone\Debug\letsworks.iOS.csprojAssemblyReference.cache

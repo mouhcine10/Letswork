@@ -18,10 +18,7 @@ namespace letsworks.Views
             InitializeComponent();
         }
 
-        public void Register()
-        {
-
-        }
+        
 
 
     }

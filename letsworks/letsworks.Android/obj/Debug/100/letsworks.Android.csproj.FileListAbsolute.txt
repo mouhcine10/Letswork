@@ -10,7 +10,6 @@ C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\bin\Debug\lets
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\MonoAndroid,Version=v10.0.AssemblyAttributes.cs
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\build.props
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\adb.props
-C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\letsworks.Android.csprojAssemblyReference.cache
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\stamp\_BuildLibraryImportsCache.stamp
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\res.flag
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\lp\44\jl\files.cache
@@ -688,3 +687,4 @@ C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\mouhc\source\repos\LetsWorks\letsworks\letsworks.Android\obj\Debug\100\letsworks.Android.csprojAssemblyReference.cache
