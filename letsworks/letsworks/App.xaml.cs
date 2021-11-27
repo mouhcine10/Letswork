@@ -11,7 +11,11 @@ namespace letsworks
         {
             InitializeComponent();
 
+<<<<<<< HEAD
             MainPage = new  Inscription();
+=======
+            MainPage = new  TabbedPageHome();
+>>>>>>> 15722b80aa01d14e28b9ba63e1378ecc6a5cf2f1
          //   GoogleMapsApiService.Initialize(key.GoogleMapsApiKey);
         }
 

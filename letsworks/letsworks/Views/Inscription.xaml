@@ -7,7 +7,11 @@
 
             <Grid Margin="10,10,10,10">
 
+<<<<<<< HEAD
                 <Grid.RowDefinitions >
+=======
+                <Grid.RowDefinitions>
+>>>>>>> 15722b80aa01d14e28b9ba63e1378ecc6a5cf2f1
                     
                     <RowDefinition  />
                     <RowDefinition  />
@@ -29,12 +33,21 @@
                 </Grid.ColumnDefinitions>-->
 
 
+<<<<<<< HEAD
                 <Entry Keyboard="Text" Placeholder="Username" Grid.Row="0"></Entry>
                 <Entry Keyboard="Email" Placeholder="E-mail:" Grid.Row="1"></Entry>
                 <Entry Keyboard="Telephone" Placeholder="Tel:" Grid.Row="2"></Entry>
                 <Entry IsPassword="True" Placeholder="Mot de passe :" Grid.Row="3"></Entry>
                 <Entry IsPassword="True" Keyboard="Text" Placeholder="Conf Mot de passe :" Grid.Row="4"></Entry>
                 <Button Clicked="Register" Text="Suivant" BackgroundColor="#35c4ba" TextColor="White" WidthRequest="2" HeightRequest="50" Margin="10,10,10,10" CornerRadius="10" Grid.Row="8"></Button>
+=======
+                <Entry Keyboard="Text" Placeholder="Nom:" Grid.Row="0"></Entry>
+                <Entry Keyboard="Text" Placeholder="Prénom:" Grid.Row="1"></Entry>
+                <Entry Keyboard="Email" Placeholder="E-mail:" Grid.Row="2"></Entry>
+                <Entry Keyboard="Telephone" Placeholder="Tel:" Grid.Row="3" Grid.Column="2"></Entry>
+                <Picker Grid.Row="3" Grid.Column="1"></Picker>
+                    <Button Text="Suivant" BackgroundColor="Green" WidthRequest="2" HeightRequest="50" Margin="10,10,10,10" CornerRadius="10" Grid.Row="5"></Button>
+>>>>>>> 15722b80aa01d14e28b9ba63e1378ecc6a5cf2f1
                 
                
             </Grid>
